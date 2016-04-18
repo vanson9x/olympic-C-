@@ -1,0 +1,39 @@
+
+abcde : 5
+
+Abcde, aBcde, abCde, abcDe, abcdE : n 
+
+*** Abcde ***
+	ABcde, AbCde, AbcDe, AbcdE(b): n-1
+
+	---- ABcde ----
+		- ABCde, ABcDe, ABcdE : n - 2
+		- ABCDe, ABCdE: n - 3
+		- ABCDE: n - 4
+	
+	--- AbCde ---
+
+		- AbCDe, AbCdE: n - 3
+		- AbCDE: n - 4
+
+	--- AbcDe
+		- AbcDE: n - 4
+
+
+	--- AbcdE : n - 5
+	
+
+ Chung minh tuong tu o tren
+	aBcde, abCde, abcDe, abcdE : n-1
+
+	--- aBcde ---
+
+	--- abCde ---
+
+	--- abcDe ---
+
+	--- abcdE ---(b)
+
+=> 1(Abcd) + 2 (n-1 + {Sum} ) + 1(abcd)
+  
+1 + 2*(( 5 -1 ) + {6 + 3 + 1}) + 1 = 30
